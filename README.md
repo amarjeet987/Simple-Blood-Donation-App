@@ -3,8 +3,7 @@
 ## Description :
 The app implements basic registration and authentication using firebase for signing up and logging in the user, google maps API,
 as well as firebase messaging services and a cloud function for sending push notifications from device to device. 
-Of course you need to add your own google-services.json and api keys, as well as setup the cloud function to see it in action (not that hard,
-just some nodejs and a few LOC ). 
+Of course you need to add your own google-services.json and api keys, as well as setup the cloud function to see it in action (not that hard, just some nodejs and a few LOC ). 
 
 ## How the app works
 First of all, you signup, and then login, and whenever you need blood, you tap the "I need blood" switch. It will show you a list of nearby
