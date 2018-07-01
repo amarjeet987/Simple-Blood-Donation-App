@@ -10,7 +10,8 @@ just some nodejs and a few LOC ).
 First of all, you signup, and then login, and whenever you need blood, you tap the "I need blood" switch. It will show you a list of nearby
 users, or say donors that have registered to the app. You can notify some, or all, everyone will recieve notifications. 
 
-![home](https://user-images.githubusercontent.com/38986305/42138775-68083b60-7da0-11e8-9494-8e3e3ca563e0.PNG)
+
+<img src="https://user-images.githubusercontent.com/38986305/42138775-68083b60-7da0-11e8-9494-8e3e3ca563e0.PNG"/>
 
 
 
