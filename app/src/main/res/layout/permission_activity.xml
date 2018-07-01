@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/fragment_background">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:id="@+id/text"
+                android:layout_centerInParent="true"
+                android:text="This app requires permissions to access your location as well as Internet. Please grant the permissions to continue."/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GO"
+                android:layout_margin="20dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/logout_button"
+                android:id="@+id/button_perm"/>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

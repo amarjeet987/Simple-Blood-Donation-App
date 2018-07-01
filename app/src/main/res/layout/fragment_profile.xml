@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.amarjeet.hola.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/fragment_background">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/rellayout1"
+            android:layout_marginTop="50dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/minion"
+                android:id="@+id/profpic"/>
+
+            <ProgressBar
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/progbar" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="loading username..."
+            android:layout_below="@+id/rellayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:textColor="#393939"
+            android:id="@+id/uname"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/signout_btn"
+            android:id="@+id/above_signout_btn">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share my location"
+                    android:padding="10dp"
+                    android:textSize="17sp"
+                    android:textColor="#393939"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't worry, don't access your location in background due to privacy issues. Whenever the app is closed, location sharing will be ceased."
+                    android:textSize="10sp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:id="@+id/assure" />
+
+
+            </LinearLayout>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contextClickable="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:padding="10dp"
+                android:id="@+id/locate"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:text="LOGOUT"
+            android:textColor="@color/white"
+            android:background="@drawable/logout_button"
+            android:id="@+id/signout_btn"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

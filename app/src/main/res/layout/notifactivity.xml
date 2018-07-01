@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30sp"
+        android:background="@drawable/fragment_background">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="166dp">
+
+            <RelativeLayout
+                android:id="@+id/rellayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtview_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="name"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rellaout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rellayout1">
+
+                <TextView
+                    android:id="@+id/help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerHorizontal="true"
+                    android:padding="20dp"
+                    android:text="is asking for your help."
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rellayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/logout_button"
+                android:text="Accept" />
+
+            <Button
+                android:id="@+id/decline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accept"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/decline"
+                android:text="decline" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

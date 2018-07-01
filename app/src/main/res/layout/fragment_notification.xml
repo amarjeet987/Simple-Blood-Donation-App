@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.amarjeet.hola.UserFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rellayout1"
+        android:layout_margin="10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start searching"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:textColor="#393939"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The people who accepted your request would be shown here, list will be refreshed in every 10 seconds."
+                android:textSize="10sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:id="@+id/assure1" />
+
+
+        </LinearLayout>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contextClickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:id="@+id/check_accept"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/fragment_background"
+        android:id="@+id/rellayout2"
+        android:layout_below="@+id/rellayout1">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerview1"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ProgressBar
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/progbar_notifrag"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LISTENING"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textview_notifrag"
+                android:layout_below="@+id/progbar_notifrag"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

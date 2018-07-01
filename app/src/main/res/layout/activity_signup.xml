@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <ProgressBar
+        android:id="@+id/progbar_signup"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rellayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/profileimg"
+            android:src="@drawable/minion"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_above="@+id/rellayout3"
+        android:id="@+id/rellayout1">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sname"
+                android:hint="Name"
+                android:paddingLeft="10dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/semail"
+                android:layout_below="@+id/sname"
+                android:hint="Email"
+                android:paddingLeft="10dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:layout_below="@+id/semail"
+                android:id="@+id/scity"
+                android:paddingLeft="10dp"/>
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:layout_below="@+id/scity"
+                android:id="@+id/spassword"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_below="@+id/spassword"
+                android:hint="Phone Number"
+                android:paddingLeft="10dp"
+                android:id="@+id/sphno"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Blood Group"
+                android:layout_below="@+id/sphno"
+                android:paddingLeft="10dp"
+                android:id="@+id/blood_group"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blood_group"
+            android:layout_marginTop="30dp"
+            android:text="Signup"
+            android:id="@+id/signup_button"
+            android:background="@drawable/button"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rellayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Signing in, you agreeing to our"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/statement"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            android:id="@+id/tnc"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/statement"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

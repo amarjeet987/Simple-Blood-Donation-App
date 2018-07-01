@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TERMS AND CONDITIONS"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:id="@+id/head"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/body"
+            android:layout_below="@+id/head"
+            android:layout_marginTop="50dp"
+            android:text="This app is meant to connect people in need of blood with the blood donors. We is not responsible for any illegal use of this product. A blood donation must be done in the hospital."/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

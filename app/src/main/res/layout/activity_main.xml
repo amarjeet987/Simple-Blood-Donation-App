@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amarjeet.hola.MainActivity"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="99"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linlayout">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/users"
+                android:text="Required"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="33"
+                android:fontFamily="sans-serif"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:id="@+id/notifications"
+                android:text="Donors"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/grey"
+                android:padding="15dp"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/profile"
+                android:layout_weight="33"
+                android:text="Profile"
+                android:textColor="@color/grey"
+                android:fontFamily="sans-serif"
+                android:padding="15dp"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linlayout">
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewpager">
+
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

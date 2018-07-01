@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <ProgressBar
+        android:id="@+id/progressBar_login"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:indeterminate="true"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/relativeLayout">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:id="@+id/email"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/email"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/login"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:layout_below="@+id/password"
+        android:background="@drawable/button"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Not a member yet? Sign Up."
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/login"
+        android:id="@+id/signup"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
