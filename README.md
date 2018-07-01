@@ -11,7 +11,7 @@ First of all, you signup, and then login, and whenever you need blood, you tap t
 users, or say donors that have registered to the app. You can notify some, or all, everyone will recieve notifications. 
 
 
-<img src="https://user-images.githubusercontent.com/38986305/42138775-68083b60-7da0-11e8-9494-8e3e3ca563e0.PNG" height="10%">
+<img src="https://user-images.githubusercontent.com/38986305/42138775-68083b60-7da0-11e8-9494-8e3e3ca563e0.PNG">
 
 
 
