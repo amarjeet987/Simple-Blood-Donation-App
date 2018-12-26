@@ -15,14 +15,14 @@ users, or say donors that have registered to the app. You can notify some, or al
 
 
 Once you are done with 
-sending the notifications, you need to see how many of them accepted your request ( which they recieved theough the notification you sent to them ). The users who accepts your request will be displayed in the donors screen. 
+sending the notifications, you need to see how many of them accepted your request ( which they recieved through the notification you sent to them ). The users who accepts your request will be displayed in the donors screen. 
 
 ![search](https://user-images.githubusercontent.com/38986305/42138774-67c9a1de-7da0-11e8-8ba4-7a2b506b50fd.PNG)
 
 
 
 
-You can navigate to their profilefrom the donor screen where you will get their contact number, as well as location ( where the Google maps api comes into play ). You can contact the nearest one, or maybe whoever you want as per your priorities. Plus, you can only get the location of the user if he has switched on the "Share My Location" as you can see in profile screen screenshot below. Thats it.
+You can navigate to their profile from the donor screen where you will get their contact number, as well as location ( where the Google maps api comes into play ). You can contact the nearest one, or maybe whoever you want as per your priorities. Plus, you can only get the location of the user if he has switched on the "Share My Location" as you can see in profile screen screenshot below. Thats it.
 
 ![profile](https://user-images.githubusercontent.com/38986305/42138776-6845aab8-7da0-11e8-816d-8ea83ef18b4e.PNG)
 
